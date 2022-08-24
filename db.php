@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $conn->set_charset('utf8');
-$sql = "SELECT * from student ";
+$sql = "SELECT * from students";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
